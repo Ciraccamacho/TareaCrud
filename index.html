@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TAREA CRUD</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script src="tareaCrud.js"></script>
+</head>
+<body>
+    <div class="header-container">
+        <img class="imagen1" src="https://studentsforliberty.org/wp-content/uploads/2023/01/PR-January-2023.jpg" alt="">
+        <h1>Tarea Entrega Crud</h1>
+        <img class="imagen2" src="https://studentsforliberty.org/wp-content/uploads/2023/01/PR-January-2023.jpg" alt="">
+    </div>
+    
+    <br/>
+    <br/>
+    <DIV class ="form-usuario">
+        <form >
+            <div><label>Nombre Completo*</label> 
+                <label class = "validation-error hide" id="fullNameValidationError">Este campo es requerido.</label>
+                <input type="text" name="fullName" id="fullName" >
+            </div>
+        <div><label>Email</label>
+            <input type="text" name="email" id="email">
+        </div>
+        <div><label>Materia</label>
+            <input type="text" name="materia" id="materia">
+        </div>
+        <div><label>Tarea</label>
+            <input type="text" name="tarea" id="tarea">
+        </div>
+        <div><label>Descripcion</label>
+            <input type="text" name="descripcion" id="descripcion">
+        </div>
+        <div class = "form-action-buttons">
+            <input type="submit" value="Agregar Tarea" onclick="onFormSubmit(event)">
+        </div>
+        </form>
+    </DIV>
+    <br/>
+    <br/>
+    <div class = "tabla-usuario">
+        <table class = "lista" id ="lista-usuarios">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Email</th>
+                    <th>Materia</th>
+                    <th>Tarea</th>
+                    <th>Descripcion</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
